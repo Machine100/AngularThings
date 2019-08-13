@@ -1,3 +1,3 @@
-<ul *ngFor="let cat of catlist">
-    <li> {{catlist[0].name}} </li>
-</ul>
+<app-catitem *ngFor="let cat of catlist" [cat]=cat >
+ 
+</app-catitem>
