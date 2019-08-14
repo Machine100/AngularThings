@@ -13,10 +13,10 @@ export class Component100Component implements OnInit {
 
   ngOnInit() {
     this.catlist = [
-      {name: 'Toodalie', color: 'Tuxedo'},
-      {name: 'Zuzu', color: 'Tabby'},
-      {name: 'Azrael', color: 'Tabby'},
-      {name: 'Annie', color: 'Black'}
+      {name: 'Toodalie', color: 'Tuxedo', isfed: true},
+      {name: 'Zuzu', color: 'Tabby', isfed: false},
+      {name: 'Azrael', color: 'Tabby', isfed: true},
+      {name: 'Annie', color: 'Black', isfed: false}
     ]
     console.log (this.catlist)
   }

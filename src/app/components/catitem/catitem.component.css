@@ -1,0 +1,19 @@
+.delbutton {
+    background: 00ffff;
+    color: #fff;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+}
+
+.itembackground {
+    background: #106400;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+}
+
+.isfed {
+    text-decoration: line-through;
+}

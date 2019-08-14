@@ -1,1 +1,8 @@
-<p> {{cat.name}} </p>
+<div [ngClass]='setClasses()'>
+  <p>
+    <input type="checkbox" />
+    {{cat.name}} 
+    <button class="delbutton">x</button>
+</p>
+</div>
+

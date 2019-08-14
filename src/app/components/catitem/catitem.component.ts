@@ -15,4 +15,13 @@ export class CatitemComponent implements OnInit {
     console.log(this.cat)
   }
 
+  // dynamically apply CSS styles to items via the [ngClass] directive
+  setClasses(){
+    let classes = {
+      itembackground: true,
+      isfed: this.cat.isfed
+    }
+    return classes
+  }
+
 }
