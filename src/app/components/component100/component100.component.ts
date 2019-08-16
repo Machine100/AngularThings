@@ -8,6 +8,8 @@ import { Cat } from '../../models/Cat'
 })
 export class Component100Component implements OnInit {
   catlist:Cat[]
+  databindedvariable: string
+  
   
   constructor() { }
 
@@ -19,5 +21,11 @@ export class Component100Component implements OnInit {
       {name: 'Annie', color: 'Black', isfed: false}
     ]
     console.log (this.catlist)
+  }
+
+  myHandler ($event){
+    console.log (event)
+    console.log (event.target.value)
+
   }
 }
