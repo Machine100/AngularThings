@@ -1,1 +1,9 @@
-<p>login works!</p>
+
+<h1> Enter your username and password</h1>
+
+<div class='grid-container'>
+    <input type=email (keyup)='onUsernameKeypress($event)'/> 
+    <input type=password (keyup)='onPasswordKeypress($event)'/>
+
+    <button (click)='onSubmitKeypress()'> Submit </button>
+</div>

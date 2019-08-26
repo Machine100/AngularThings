@@ -1,1 +1,11 @@
-<p>register works!</p>
+<h1> New User Registeration </h1>
+
+<h1> Enter your email </h1>
+
+<input type=email (keyup)='onUsernameKeypress($event)'/> {{email}} 
+
+<h1> Enter your password</h1>
+
+<input type=password (keyup)='onPasswordKeypress($event)'/> {{password}}
+
+<button (click)='createNewUser()'> Create New User account </button>

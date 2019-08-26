@@ -14,6 +14,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { environment } from 'src/environments/environment';
+import { AuthbuttonbarComponent } from './components/authbuttonbar/authbuttonbar.component';
 
 
 @NgModule({
@@ -23,11 +24,12 @@ import { environment } from 'src/environments/environment';
     CatitemComponent,
     LoginComponent,
     RegisterComponent,
-    LogoutComponent
+    LogoutComponent,
+    AuthbuttonbarComponent
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp( environment.firebase ),
+    AngularFireModule.initializeApp( environment.firebaseConfig ),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AppRoutingModule

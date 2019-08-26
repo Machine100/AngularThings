@@ -1,0 +1,9 @@
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    color: #545454
+}
+

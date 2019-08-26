@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service'
 
 @Component({
   selector: 'app-logout',
   templateUrl: './logout.component.html',
   styleUrls: ['./logout.component.css']
 })
+
 export class LogoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit() {
   }
+
+onLogoutClick () {
+  console.log ('got to onSubmitKeypress function')
+  this.auth.logoutUser()
+}
 
 }
