@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
   }
 
   createNewUser () {
-    this.auth.createUserWithEmailAndPassword ( this.email, this.password )
+    this.auth.createUs ( this.email, this.password )
   }
 
 

@@ -1,9 +1,11 @@
 
-<h1> Enter your username and password</h1>
 
-<div class='grid-container'>
-    <input type=email (keyup)='onUsernameKeypress($event)'/> 
-    <input type=password (keyup)='onPasswordKeypress($event)'/>
 
-    <button (click)='onSubmitKeypress()'> Submit </button>
+<div class='gridd-container'>
+    <div class='fields-container'>
+        <h2> Enter your username and password</h2>
+        <input class='input-field' type=email (keyup)='onUsernameKeypress($event)'/> 
+        <input class='input-field' type=password (keyup)='onPasswordKeypress($event)'/>
+        <button class='button' (click)='onSubmitKeypress()'> Submit </button>
+    </div>
 </div>
