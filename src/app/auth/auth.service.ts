@@ -10,6 +10,7 @@ import { AngularFirestore } from '@angular/fire/firestore'
 export class AuthService {
 
   currentUsername: string  // this data was fed into the class via loginUser(), then is shared out of the service
+  currentCredential: any
 
   constructor(
     private afAuth:AngularFireAuth,
@@ -25,5 +26,13 @@ export class AuthService {
       })
   }
 
+  registerUser(email: string, password: string){
+     this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+       .then(userCredential => {
+         this.currentUsername = email
+       })
+ 
+      }
+  }
 
   }

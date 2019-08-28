@@ -16,8 +16,18 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  onUsernameKeypress (event) { 
+    this.email = event.target.value 
+    console.log (this.email)
+  }
+
+  onPasswordKeypress (event) { 
+    this.password = event.target.value 
+    console.log (this.password)
+  }
+
   createNewUser () {
-    this.auth.createUs ( this.email, this.password )
+    this.auth.registerUser ( this.email, this.password )
   }
 
 

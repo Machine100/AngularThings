@@ -1,11 +1,12 @@
-<h1> New User Registeration </h1>
 
-<h1> Enter your email </h1>
 
-<input type=email (keyup)='onUsernameKeypress($event)'/> {{email}} 
-
-<h1> Enter your password</h1>
-
-<input type=password (keyup)='onPasswordKeypress($event)'/> {{password}}
-
-<button (click)='createNewUser()'> Create New User account </button>
+<div class='gridd-container'>
+        <div class='fields-container'>
+            <h3> User Registration </h3>
+       
+            <input class='input-field' type=email (keyup)='onUsernameKeypress($event)'/> 
+         
+            <input class='input-field' type=password (keyup)='onPasswordKeypress($event)'/>
+            <button class='button' (click)='createNewUser()'> Create New User </button>
+        </div>
+    </div>

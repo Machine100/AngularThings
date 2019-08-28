@@ -1,0 +1,22 @@
+
+.gridd-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fields-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 2rem 2rem 2rem;
+}
+
+.button {
+    background-color: greenyellow;
+    padding: 5px;
+    font-size: 15px
+}
+
+.input-field{
+    background-color: grey;
+    font-size: 15px;
+}
