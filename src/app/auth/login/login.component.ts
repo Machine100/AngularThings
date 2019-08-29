@@ -8,12 +8,17 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  authError: any
   username: string
   password: string
 
   constructor(private auth: AuthService) { }
 
   ngOnInit() {
+    this.auth.eventAuthError$.subscribe( data => {
+      this.authError=data
+      console.log('via observable:', data)
+    })
   }
 
   onSubmitKeypress () {
@@ -22,12 +27,12 @@ export class LoginComponent implements OnInit {
   
   onUsernameKeypress (event) { 
     this.username = event.target.value 
-    console.log (this.username)
+    //console.log (this.username)
   }
 
   onPasswordKeypress (event) { 
     this.password = event.target.value 
-    console.log (this.password)
+    //console.log (this.password)
   }
 
 }
