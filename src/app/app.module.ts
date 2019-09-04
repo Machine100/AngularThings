@@ -15,6 +15,7 @@ import { LogoutComponent } from './auth/logout/logout.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { environment } from 'src/environments/environment';
 import { AuthbuttonbarComponent } from './components/authbuttonbar/authbuttonbar.component';
+import { ReaddatabaseComponent } from './components/readdatabase/readdatabase.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AuthbuttonbarComponent } from './components/authbuttonbar/authbuttonbar
     LoginComponent,
     RegisterComponent,
     LogoutComponent,
-    AuthbuttonbarComponent
+    AuthbuttonbarComponent,
+    ReaddatabaseComponent
   ],
   imports: [
     BrowserModule,

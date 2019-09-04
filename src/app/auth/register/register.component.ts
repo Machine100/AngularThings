@@ -10,10 +10,13 @@ export class RegisterComponent implements OnInit {
 
   email: string
   password: string
+  authError: any
 
   constructor(private auth: AuthService) { }
 
   ngOnInit() {
+ //   this.auth.eventAuthError$.subscribe( data =>
+ //     this.authError = data)
   }
 
   onUsernameKeypress (event) { 

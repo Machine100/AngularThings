@@ -28,7 +28,8 @@ export class AuthService {
         console.log (this.currentCredential)
       })
     .catch (error => {
-      this.eventAuthError.next(error)               // emit the error to the private side
+      this.eventAuthError.next(error)
+      console.log ('caught errorror')             // emit the error to the private side
     })
     }
 
