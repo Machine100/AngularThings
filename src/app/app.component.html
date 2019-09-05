@@ -1,23 +1,28 @@
 
+<a [routerLink]="[{ outlets:{ outlet2:['readdatabase'] } }]"> ReadTheDatabase </a>
+
 <div class='grid-container'>
 
     <div class='header'>
-            <app-authbuttonbar></app-authbuttonbar>
-            <a [routerLink]='readdatabase'> readdatabase </a>
+        <app-authbuttonbar></app-authbuttonbar>
     </div>
 
-    <div class='display-area-one'>
-        <a> inarea1 </a>
-        <div><router-outlet></router-outlet></div>
-        <a>alsoin1</a>
+    <div class='display-area-four'>
+        <app-navbar></app-navbar>
     </div>
 
     <div class='display-area-two'>
-        
+ 
         <router-outlet name='outlet2'></router-outlet>
     </div>
 
+    <div class='display-area-three'>
+ 
+            <router-outlet></router-outlet>
+    </div>
+
 </div>
+
 
 
 
