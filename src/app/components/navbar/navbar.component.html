@@ -2,7 +2,7 @@
 
     
 <div class='grid-item'>
-    <a routerLink="['component1']">read the database</a>
+    <a [routerLink]="[{ outlets:{ outlet2:['readdatabase'] } }]"> ReadTheDatabase </a> 
 
 </div>
     <div class='grid-item'>
@@ -11,5 +11,5 @@
 <div class='grid-item'>
     <a routerLink="['component3']">Nav 3</a>
 </div>
-<a [routerLink]="[{ outlets:{ outlet2:['readdatabase'] } }]"> ReadTheDatabase </a>
+   
 </div>
