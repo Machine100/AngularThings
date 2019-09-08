@@ -7,8 +7,6 @@ import {AngularFireAuthModule} from '@angular/fire/auth'
 import {AngularFirestoreModule} from '@angular/fire/firestore'
 
 import { AppComponent } from './app.component';
-//import { Component100Component } from './components/component100/component100.component';
-import { CatitemComponent } from './components/catitem/catitem.component';
 
 import { LoginComponent } from './auth/login/login.component';
 import { LogoutComponent } from './auth/logout/logout.component';
@@ -22,8 +20,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-//    Component100Component,
-    CatitemComponent,
     LoginComponent,
     RegisterComponent,
     LogoutComponent,
@@ -38,8 +34,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AngularFirestoreModule,
     AppRoutingModule
   ],
-   providers: [],
-   bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }

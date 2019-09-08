@@ -1,11 +1,19 @@
 
 .grid-container {
     display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: end;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .button-container {
     display: grid;
-    grid-template-columns: 60px 60px 60px;
+    grid-column: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
 }
 
