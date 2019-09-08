@@ -2,13 +2,14 @@
 
     
 <div class='grid-item'>
-    <a routerLink="['component1']">txt1</a>
+    <a routerLink="['component1']">read the database</a>
+
 </div>
     <div class='grid-item'>
-    <a routerLink="['component2']">txt2</a>
+    <a routerLink="['component2']">Nav 2</a>
 </div>
 <div class='grid-item'>
-    <a routerLink="['component3']">txt3</a>
+    <a routerLink="['component3']">Nav 3</a>
 </div>
-
+<a [routerLink]="[{ outlets:{ outlet2:['readdatabase'] } }]"> ReadTheDatabase </a>
 </div>
