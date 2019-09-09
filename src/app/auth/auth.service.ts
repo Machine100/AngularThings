@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core'
 import { Router } from '@angular/router'
 import { AngularFireAuth } from '@angular/fire/auth'
 import { AngularFirestore } from '@angular/fire/firestore'
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs'
+import { UserInfo } from '../models/UserInfo'
 
 
 @Injectable({
@@ -10,11 +11,17 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AuthService {
 
-  private eventAuthError = new BehaviorSubject<string>('')
-  eventAuthError$ = this.eventAuthError.asObservable()
+  private eventAuthError = new BehaviorSubject<string>('')   // Auth errors go out as an observable
+  eventAuthError$ = this.eventAuthError.asObservable()       // These are pushed out and trigger events
+                                                             // on clients that subscribe.
   
-  currentCredential: firebase.auth.UserCredential  // this data was fed into the class via loginUser(), then is shared out of the service
+  currentCredential: firebase.auth.UserCredential  // The user cred is shared out of the service
+                                                   // as a plain variable. This has to be manually 
+                                                   // updated by the client.
   
+  private eventUserInfo = new BehaviorSubject<UserInfo>({displayname:'', email:'', uid:''})
+  eventUserInfo$ = this.eventUserInfo.asObservable()
+
   constructor(
     private afAuth:AngularFireAuth,
     private db: AngularFirestore,
@@ -24,12 +31,12 @@ export class AuthService {
   loginUser(username: string, password: string){
     this.afAuth.auth.signInWithEmailAndPassword(username, password)
       .then(credential => {
-        this.currentCredential = credential  // share out of the service the username and password that was entered 
-        console.log (this.currentCredential)
+        console.log ('login sucessful', credential)
+        this.currentCredential = credential     // store the credential
+  //      this.eventUserInfo.next(credential)     // observe out a subset of the credential
       })
     .catch (error => {
       this.eventAuthError.next(error)
-      console.log ('caught errorror')             // emit the error to the private side
     })
     }
 
@@ -47,5 +54,6 @@ export class AuthService {
  
     
   }
+  
 
 }
