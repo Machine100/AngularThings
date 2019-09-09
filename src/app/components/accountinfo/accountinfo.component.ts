@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { AuthService } from '../../auth/auth.service'
+import { UserInfo } from '../../models/UserInfo'
+//import { auth } from 'firebase'
+//import { auth } from 'firebase'
+                 // import RXjs?
 
 @Component({
   selector: 'app-accountinfo',
@@ -7,9 +12,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountinfoComponent implements OnInit {
 
-  constructor() { }
+  userInfo : UserInfo
+  accountobserver: any = {
+    next: function onNext (value) {}
+    //error: {},
+    //complete: {}
+  }
+  
+  constructor(private authService: AuthService) { }   
 
   ngOnInit() {
+    this.authService.eventUserInfo$.subscribe (userInfo => (this.userInfo = userInfo))
   }
 
 }
