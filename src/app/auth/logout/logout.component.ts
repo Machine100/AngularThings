@@ -15,7 +15,6 @@ export class LogoutComponent implements OnInit {
   }
 
 onLogoutClick () {
-  console.log ('got to onSubmitKeypress function')
   this.auth.logoutUser()
 }
 

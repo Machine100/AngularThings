@@ -4,10 +4,10 @@ import { AppRoutingModule } from './app-routing/app-routing.module'
 
 import {AngularFireModule} from '@angular/fire'
 import {AngularFireAuthModule} from '@angular/fire/auth'
-import {AngularFirestoreModule} from '@angular/fire/firestore'
+import { AngularFirestoreModule } from '@angular/fire/firestore'
+// import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-
 import { LoginComponent } from './auth/login/login.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -36,8 +36,8 @@ import { AccountinfoComponent } from './components/accountinfo/accountinfo.compo
     AngularFireModule.initializeApp( environment.firebaseConfig ),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })

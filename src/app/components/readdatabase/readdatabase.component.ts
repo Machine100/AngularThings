@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from 'src/app/database/database.service';
 
 @Component({
   selector: 'app-readdatabase',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReaddatabaseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: DatabaseService) { }
 
   ngOnInit() {
+  }
+
+  rdb() {
+    console.log ('arrived at rdb')
+    
   }
 
 }
