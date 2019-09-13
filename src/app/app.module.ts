@@ -16,6 +16,7 @@ import { AuthbuttonbarComponent } from './components/authbuttonbar/authbuttonbar
 import { ReaddatabaseComponent } from './components/readdatabase/readdatabase.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountinfoComponent } from './components/accountinfo/accountinfo.component';
+import { WritedatabaseComponent } from './components/writedatabase/writedatabase.component';
 
 
 
@@ -29,6 +30,7 @@ import { AccountinfoComponent } from './components/accountinfo/accountinfo.compo
     ReaddatabaseComponent,
     NavbarComponent,
     AccountinfoComponent,
+    WritedatabaseComponent,
 
   ],
   imports: [

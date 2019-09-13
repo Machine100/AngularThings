@@ -14,8 +14,12 @@ export class ReaddatabaseComponent implements OnInit {
   }
 
   rdb() {
-    console.log ('arrived at rdb')
-    
+    this.db.readDatabase().subscribe(result=>
+    console.log(result))       
+  }
+
+  addItem () {
+    this.db.addItem ('mockitem')
   }
 
 }

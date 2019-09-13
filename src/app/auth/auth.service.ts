@@ -11,7 +11,7 @@ import { UserInfo } from '../models/UserInfo'
 })
 export class AuthService {
 
-  currentUserInfo : UserInfo = {displayname:'',email:'',uid:''}
+  currentUserInfo : UserInfo = {displayname:'',email:'',uid:''}   // How does this share out? Need to narrow the scope.
   currentCredential: firebase.auth.UserCredential
 
   private eventAuthError = new BehaviorSubject<string>('')
