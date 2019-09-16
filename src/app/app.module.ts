@@ -17,6 +17,7 @@ import { ReaddatabaseComponent } from './components/readdatabase/readdatabase.co
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountinfoComponent } from './components/accountinfo/accountinfo.component';
 import { WritedatabaseComponent } from './components/writedatabase/writedatabase.component';
+import { CatdashboardComponent } from './components/catdashboard/catdashboard.component';
 
 
 
@@ -31,6 +32,7 @@ import { WritedatabaseComponent } from './components/writedatabase/writedatabase
     NavbarComponent,
     AccountinfoComponent,
     WritedatabaseComponent,
+    CatdashboardComponent,
 
   ],
   imports: [

@@ -27,12 +27,12 @@ export class LoginComponent implements OnInit {
   
   onUsernameKeypress (event) { 
     this.username = event.target.value 
-    //console.log (this.username)
+    console.log (this.username)
   }
 
   onPasswordKeypress (event) { 
     this.password = event.target.value 
-    //console.log (this.password)
+    console.log (this.password)
   }
 
 }

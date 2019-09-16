@@ -2,20 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from 'src/app/database/database.service';
 
 @Component({
-  selector: 'app-readdatabase',
-  templateUrl: './readdatabase.component.html',
-  styleUrls: ['./readdatabase.component.css']
+  selector: 'app-catdashboard',
+  templateUrl: './catdashboard.component.html',
+  styleUrls: ['./catdashboard.component.css']
 })
-export class ReaddatabaseComponent implements OnInit {
+export class CatdashboardComponent implements OnInit {
 
   constructor(private db: DatabaseService) { }
 
   ngOnInit() {
-  }
-
-  rdb() {
     this.db.readDatabase().subscribe(result=>
-    console.log(result))       
+    console.log(result))
   }
 
 }

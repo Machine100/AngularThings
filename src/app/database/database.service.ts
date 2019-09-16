@@ -14,8 +14,9 @@ export class DatabaseService {
   // async listener
 
   
-  addItem (cat: string){
-    this.db.collection('AngularThings').doc('Cats').update({data: cat})  
+  addItem (catName: string, catColor: string){
+   
+    this.db.collection('AngularThings').doc('Cats').set( catName )  
     .then( e => {
       console.log ('Cat was added to the database')
     })

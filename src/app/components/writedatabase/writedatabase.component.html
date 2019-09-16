@@ -1,1 +1,8 @@
-<p>writedatabase works!</p>
+
+
+Enter a cat's name
+<input class='input-field' (keyup)='onNameKeypress($event)'/>
+What is the cat's color?
+<input class='input-field' (keyup)='onColorKeypress($event)'/>
+
+<button class='button' (click)='onSubmit()'> Submit </button>
