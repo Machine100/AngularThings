@@ -8,11 +8,14 @@ import { DatabaseService } from 'src/app/database/database.service';
 })
 export class CatdashboardComponent implements OnInit {
 
+  allCats: any
+  
   constructor(private db: DatabaseService) { }
 
   ngOnInit() {
-    this.db.readDatabase().subscribe(result=>
-    console.log(result))
+    this.db.readDatabase().subscribe(result=>{
+    console.log(result)
+    this.allCats = result
+    })
   }
-
 }

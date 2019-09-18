@@ -6,9 +6,7 @@ import { AngularFirestore } from '@angular/fire/firestore'
 })
 export class DatabaseService {
 
-  constructor(
-    private db: AngularFirestore
-  ) { }
+  constructor(private db: AngularFirestore) { }
 
   
   // async listener
@@ -16,7 +14,7 @@ export class DatabaseService {
   
   addItem (catName: string, catColor: string){
    
-    this.db.collection('AngularThings').doc('Cats').set( catName )  
+    this.db.collection('AngularThings').doc('Cats').update( {[catName]:catColor} )  
     .then( e => {
       console.log ('Cat was added to the database')
     })
