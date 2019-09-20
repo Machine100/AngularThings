@@ -31,14 +31,4 @@ export class WritedatabaseComponent implements OnInit {
     this.db.addItem (this.catName, this.catColor)
   }
 
-  //  wdb() {
-//    this.db.readDatabase().subscribe(result=>
- //   console.log(result))       
-//  }
-
-//  writeItem () {
-//    this.db.addItem ('mockitem')
-//  }
-
-
 }

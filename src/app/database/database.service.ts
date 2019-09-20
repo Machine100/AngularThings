@@ -8,10 +8,6 @@ export class DatabaseService {
 
   constructor(private db: AngularFirestore) { }
 
-  
-  // async listener
-
-  
   addItem (catName: string, catColor: string){
    
     this.db.collection('AngularThings').doc('Cats').update( {[catName]:catColor} )  
@@ -23,6 +19,7 @@ export class DatabaseService {
   readDatabase (){
     console.log('arrived at readdatabase')
     return this.db.collection('AngularThings').doc('Cats').valueChanges()   // Returns observable
+
       
   
   }
