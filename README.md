@@ -1,12 +1,8 @@
 # AngularThings
 
-A reactive CRUD app.
+This project was done as a way to learn a group of technologies. It eventually came together as a reactive CRUD app with authentication. It doesn't really have a finised product with a purpose reason to exist. The goals I had for working on this app have been completed.
 
-Firebase on back end.
+Uses Firebase on back end. Observables to the back end results in a reactive app needing no REST calls. Implements 2 Angular services and the Angular router.
 
-Has authentication implemented.
 
-Implements 2 Angular services: one for authentication, and a second to perform database requests.
-
-Uses Observables to make back end requests - no REST calls.
 
