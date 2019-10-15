@@ -6,6 +6,10 @@ import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 
+//import { MatSliderModule } from '@angular/material/slider'
+//import {  } from '@angular/material/slider'
+//import { MaterialModule } from '@angular/material'
+
 import { AppComponent } from './app.component'
 import { LoginComponent } from './auth/login/login.component'
 import { LogoutComponent } from './auth/logout/logout.component'
@@ -16,7 +20,8 @@ import { ReaddatabaseComponent } from './components/readdatabase/readdatabase.co
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { AccountinfoComponent } from './components/accountinfo/accountinfo.component'
 import { WritedatabaseComponent } from './components/writedatabase/writedatabase.component'
-import { CatdashboardComponent } from './components/catdashboard/catdashboard.component'
+import { CatdashboardComponent } from './components/catdashboard/catdashboard.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -40,6 +45,9 @@ import { CatdashboardComponent } from './components/catdashboard/catdashboard.co
     AngularFireAuthModule,
     AngularFirestoreModule,
     AppRoutingModule,
+    NoopAnimationsModule,
+   // MatSliderModule
+   //MaterialModule
    ],
   providers: [],
   bootstrap: [AppComponent]
