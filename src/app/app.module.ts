@@ -6,7 +6,7 @@ import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 
-//import { MatSliderModule } from '@angular/material/slider'
+import { MatToolbarModule } from '@angular/material/toolbar'
 //import {  } from '@angular/material/slider'
 //import { MaterialModule } from '@angular/material'
 
@@ -46,8 +46,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations'
     AngularFirestoreModule,
     AppRoutingModule,
     NoopAnimationsModule,
-   // MatSliderModule
-   //MaterialModule
+    MatToolbarModule
+   // MaterialModule
    ],
   providers: [],
   bootstrap: [AppComponent]
