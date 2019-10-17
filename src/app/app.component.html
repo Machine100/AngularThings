@@ -1,10 +1,16 @@
 
-<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-<mat-toolbar>
-    <span> test </span>
-</mat-toolbar>
+  <mat-toolbar class='md-hue-1' color='primary'>
+    <span>Cat Tracker</span>
+    <span class='spacer'></span>
+      <span>
+        <button mat-flat-button class='mat-small' color='accent' [routerLink]="['login']"> login </button>
+        <button mat-flat-button color='accent' [routerLink]="['logout']"> logout </button>
+        <button mat-flat-button mat-large color='accent' [routerLink]="['register']"> Register </button>
+      </span>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+  </mat-toolbar>
 
-
+<!----
 <div class="container">
         <div>
           <mat-form-field appearance="outline" [hideRequiredMarker]="true">
@@ -12,37 +18,29 @@
             <input type="text" matInput placeholder="Enter your name">
           </mat-form-field>
         </div>
-        <div><button mat-raised-button color="primary">Test</button></div>
       </div>
-
-
-
-<div class='grid-container'>
-
+-->
+<!--
     <div class='header'>
         <app-authbuttonbar></app-authbuttonbar>
     </div>
-
+-->
+<div class='grid-container'>
     <div class='display-area-one'>
         <app-navbar></app-navbar>
     </div>
-
     <div class='display-area-two'>
         <router-outlet name='outlet2'></router-outlet>
     </div>
-
     <div class='display-area-three'>
             <router-outlet></router-outlet>
     </div>
-
     <div class='display-area-four'>
         <app-accountinfo></app-accountinfo>
     </div>
-
     <div class='display-area-five'>
         <app-catdashboard></app-catdashboard>
     </div>
-
 </div>
 
 

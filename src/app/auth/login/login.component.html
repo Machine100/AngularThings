@@ -1,11 +1,18 @@
-
-
-
-<div class='gridd-container'>
+<!----
     <div class='fields-container'>
         <h3> Enter un and pw</h3>
-        <input class='input-field' type=email (keyup)='onUsernameKeypress($event)'/> 
-        <input class='input-field' type=password (keyup)='onPasswordKeypress($event)'/>
-        <button class='button' (click)='onSubmitKeypress()'> Submit </button>
+        <input matInput placeholder='email' (keyup)='onUsernameKeypress($event)'/> 
+        <input matInput placeholder='password' type=password (keyup)='onPasswordKeypress($event)'/>
+        <button mat-flat-button color='accent' (click)='onSubmitKeypress()'> Submit </button>
     </div>
-</div>
+-->
+
+<form>
+    <mat-form-field class='input-field'>
+        <input matInput placeholder='Email' (keyup)='onUsernameKeypress($event)'/>
+    </mat-form-field>
+    <mat-form-field class='input-field'>
+        <input matInput placeholder='Password' (keyup)='onPasswordKeypress($event)' />
+    </mat-form-field>
+    <button mat-flat-button color='accent' (click)='onSubmitKeypress()'> Submit </button>
+</form>

@@ -6,9 +6,7 @@ import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 
-import { MatToolbarModule } from '@angular/material/toolbar'
-//import {  } from '@angular/material/slider'
-//import { MaterialModule } from '@angular/material'
+import { MatToolbarModule, MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule} from '@angular/material'
 
 import { AppComponent } from './app.component'
 import { LoginComponent } from './auth/login/login.component'
@@ -46,7 +44,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations'
     AngularFirestoreModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule
+
    // MaterialModule
    ],
   providers: [],

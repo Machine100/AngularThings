@@ -6,14 +6,16 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
 
+export class LoginComponent implements OnInit {
+  
   authError: any
   username: string
   password: string
 
   constructor(private auth: AuthService) { }
 
+  
   ngOnInit() {
     this.auth.eventAuthError$.subscribe( data => {
       this.authError=data
