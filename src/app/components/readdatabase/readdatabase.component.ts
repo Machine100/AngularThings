@@ -8,14 +8,20 @@ import { DatabaseService } from 'src/app/database/database.service';
 })
 export class ReaddatabaseComponent implements OnInit {
 
+  cats:any
+
   constructor(private db: DatabaseService) { }
 
   ngOnInit() {
   }
 
   rdb() {
-    this.db.readDatabase().subscribe(result=>
-    console.log(result))       
+    this.db.readDatabase().subscribe(result=>{
+      console.log(result)
+      this.cats = [{name: 'one'},{name:'two'}]
+
+    }) 
+    
   }
 
 }

@@ -1,3 +1,8 @@
 
 <button class=button (click)='rdb()'> read data</button>
-<button class=button (click)='addItem()'> read item </button>
+{{cats.rrr}}
+<mat-list>
+    <mat-list-item *ngFor="let cat of cats" > 
+        {{cat.name}}
+    </mat-list-item>
+</mat-list>
