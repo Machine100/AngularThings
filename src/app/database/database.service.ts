@@ -18,8 +18,8 @@ export class DatabaseService {
   
   readDatabase (){
     console.log('arrived at readdatabase')
-    return this.db.collection('AngularThings').doc('Cats').valueChanges()   // Returns observable
-
+    // return this.db.collection('AngularThings').doc('Cats').valueChanges()   // Returns observable
+    return this.db.collection('AngularThings').doc('PyPy').valueChanges()
       
   
   }

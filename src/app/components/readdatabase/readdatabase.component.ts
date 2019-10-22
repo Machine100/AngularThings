@@ -18,7 +18,7 @@ export class ReaddatabaseComponent implements OnInit {
   rdb() {
     this.db.readDatabase().subscribe(result=>{
       console.log(result)
-      this.cats = [{name: 'one'},{name:'two'}]
+      this.cats = [result.name,result.color]
 
     }) 
     
